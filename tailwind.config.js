@@ -7,7 +7,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'sans': ['sans-serif', 'ClearSans']
+                'sans': ['sans-serif', 'ClearSans'],
             }
         },
     },
