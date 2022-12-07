@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 100% 100%;
+
+}
+
+
+.grad {
+    width: 100%;
+}
+
+.personal {
+    width: 100%;
+}
