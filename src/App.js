@@ -4,6 +4,7 @@ import { getProfileData } from "./components/AsyncFunctions/asyncDataHandlers.js
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import GradProfile from "./components/graduates/GradProfile";
+import ProfilePage from "./components/ProfilePage.jsx";
 
 export default function App() {
   const [profile, setProfile] = useState([]);
@@ -21,7 +22,7 @@ export default function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<GradProfile profiledata={profile} />} />
+        <Route path="/" element={<ProfilePage profiledata={profile} />} />
       </Routes>
       <Footer />
     </>
