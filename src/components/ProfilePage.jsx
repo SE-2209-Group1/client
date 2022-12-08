@@ -1,7 +1,8 @@
 import React from 'react'
 import GradProfile from './graduates/GradProfile'
+import Training from '../Graduate/Training'
 
-const ProfilePage = ({ profiledata }) => {
+const ProfilePage = ({ profiledata, trainingdata }) => {
     return (
         <>
             <div >{profiledata.map(data =>
@@ -17,6 +18,16 @@ const ProfilePage = ({ profiledata }) => {
                     linkedinLink={data.linkedinlink}
 
                 ></GradProfile>)}</div>
+
+            <div >{trainingdata.map(data =>
+                <Training key={data.profileid}
+                    cohort={data.cohort}
+                    learningPath={data.learningPath}
+                    trainer={data.trainer}
+                    finishDate={data.finishDate}
+                    moduleGrades={data.moduleGrades}
+
+                ></Training>)}</div>
 
         </>
     )
