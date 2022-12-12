@@ -24,4 +24,28 @@ export const getUniData = async (setUniDeg, setErrorStatus, profileid) => {
   }
 };
 
+export const getTrainingData = async (setTraining, setErrorStatus, profileid) => {
+  try {
+    const responseTrainingURL = await axios.get(
+      `http://localhost:4000/yourTraining/${profileid}`
+    );
+    console.log(responseTrainingURL.data);
+    setTraining(responseTrainingURL.data);
+  } catch (error) {
+    setErrorStatus(error.message);
+  }
+};
+
+export const getModuleData = async (setModules, setErrorStatus, profileid) => {
+  try {
+    const responseModulesURL = await axios.get(
+      `http://localhost:4000/getModules/${profileid}`
+    );
+    console.log(responseModulesURL.data);
+    setModules(responseModulesURL.data);
+  } catch (error) {
+    setErrorStatus(error.message);
+  }
+};
+
 
