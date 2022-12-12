@@ -27,7 +27,7 @@ export const getUniData = async (setUniDeg, setErrorStatus, profileid) => {
 export const getTrainingData = async (setTraining, setErrorStatus, profileid) => {
   try {
     const responseTrainingURL = await axios.get(
-      `http://localhost:4000/getTraining/${profileid}`
+      `http://localhost:4000/yourTraining/${profileid}`
     );
     console.log(responseTrainingURL.data);
     setTraining(responseTrainingURL.data);
