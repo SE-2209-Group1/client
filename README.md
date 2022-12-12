@@ -23,23 +23,71 @@
 
 ## About the project
 
+In this project we have tasked with creating a full-stack DFX clone, making sure to include to the front and back-end.
+We were given a large range of epic user stories to break down and complete within our teams. 
+
 
 ## Built with
+
+### Front end
+ReactJS App with the following imports:
+
+axios (for handling HTTP requests and responses)
+bootstrap (css styling import only)
+React Router (handling paths within the React App)
+
+Testing - Jest with:
+
+testing-library/react
+testing-library/user-events
+jest.fn() for mocking axios get/post responses.
+
+### Back end
+
+NodeJS server using:
+
+Express (provide web framework for node)
+Mongoose (provide connection between server and MongoDB)
+body-parser (parsing middleware for handling json req.body)
+dotenv (environment variable loading)
+cors (cross origin resource sharing package)
+
+Testing - Mocha with:
+
+chai (assertion library)
+chai-http (extend chai assertion library with HTTP integration)
+Back end (data persistence layer)
+MongoDB Atlas
 
 
 ## Getting started
 
+Clone the project and then from the project root directory:
+
+Install the dependencies
+```npm i``` // from both the cloned root directory of the front end and back end
+Run tests:
+```$ npm test```
+Run the server
+```$ npm start```
+Using web browser, navigate to the localhost address/port provided in the server console.
 
 ## Product Backlog
+
+Our epic backlog user stories we focused on:
+
+As a graduate user I want to be able to view my profile so that I can check it for errors and omissions
+
+As a graduate user I want to be able to edit my profile so that I can add or update information
 
 
 ## Sprint One Backlog
 
-
+Have the graduate view page fully built, tested, styled, shippable and checked with product owner
 
 ## Mocks and Component heirachy
 
-I have create 4 mocks to show the various pages of the application. A sign up page, a log in page, the homepage, and a create peep page. I will break these mocks into a component heirachy.
+We have used the two wireframes given to us by the product owner and from these we have broken them down into the component heirarchy below.
 
 ## Graduate Page
 
