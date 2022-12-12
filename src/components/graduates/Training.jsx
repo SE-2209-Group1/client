@@ -24,10 +24,6 @@ const Training = ({ trainingData }) => {
                                     <span className="font-bold w-24">Training Finish Date:</span>
                                     <span className="text-gray-700">{data.finishDate}</span>
                                 </li>
-                                <li className="flex border-b py-2">
-                                    <span className="font-bold w-24">Module Grades:</span>
-                                    <span className="text-gray-700">{data.moduleGrades}</span>
-                                </li>
                             </ul>
                         </div>
                     </div>
