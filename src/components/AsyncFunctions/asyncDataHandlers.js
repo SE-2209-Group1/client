@@ -36,4 +36,16 @@ export const getTrainingData = async (setTraining, setErrorStatus, profileid) =>
   }
 };
 
+export const getModuleData = async (setModules, setErrorStatus, profileid) => {
+  try {
+    const responseModulesURL = await axios.get(
+      `http://localhost:4000/getModules/${profileid}`
+    );
+    console.log(responseModulesURL.data);
+    setModules(responseModulesURL.data);
+  } catch (error) {
+    setErrorStatus(error.message);
+  }
+};
+
 
