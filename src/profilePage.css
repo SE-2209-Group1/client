@@ -1,0 +1,23 @@
+.profile {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    grid-gap: 10px;
+
+}
+
+
+.grad {
+    width: 100%;
+
+}
+
+.personal {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+}
