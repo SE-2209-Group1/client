@@ -12,7 +12,6 @@
     <li><a href="#mocks-and-component-heirachy">Mocks and Component heirachy</a></li>
     <li><a href="#front-end-breakdown">Front-end Breakdown</a></li>
     <li><a href="#back-end-breakdown">Back-end Breakdown</a></li>
-    <li><a href="#problem-statements">Problem Statements</a></li>
     <li><a href="#tests">Tests</a></li>
     <li><a href="#project-review-and-roadmap">Project Review and Roadmap</a></li>
   </ol>
