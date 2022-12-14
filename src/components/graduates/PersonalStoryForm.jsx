@@ -4,36 +4,42 @@ import React from 'react'
 import Card from '../Card'
 import Divider from '../Divider'
 
-const PersonalStorySummary = ({ uniData }) => {
+const PersonalStoryForm = ({ uniData }) => {
     return (
         <>
             {uniData.map(data => (
-                <Card key={data.profileid} header={"Personal Story Summary"}>
+                <Card key={data.profileid} header={"Edit Your Personal Story Summary"}>
                     <dl>
                         <Divider gray={true}>
                             <dt className="text-sm font-medium text-gray-500">University Degree:</dt>
                             <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                                <p><strong>Subject: </strong>{data.unidesc}</p>
-                                <p><strong>University: </strong> {data.uniname}</p>
-                                <p><strong>Grade: </strong> {data.unigrade}</p>
-                                <p><strong>Level: </strong> {data.unilevel}</p>
+                                <p><strong>Subject: </strong><input className="bg-white " placeholder={data.unidesc} /></p>
+                                <p><strong>University: </strong> <input className="bg-white " placeholder={data.uniname} /></p>
+                                <p><strong>Grade: </strong> <input className="bg-white " placeholder={data.unigrade} /></p>
+                                <p><strong>Level: </strong> <input className="bg-white " placeholder={data.unilevel} /></p>
                                 <p><strong>From: </strong> {moment(data.fromdate).format('DD/MM/YYYY')} <strong> to: </strong>{moment(data.todate).format('DD/MM/YYYY')}</p>
                             </dd>
                         </Divider>
 
                         <Divider>
                             <dt className="text-sm font-medium text-gray-500">School qualification:</dt>
-                            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Backend Developer</dd>
+                            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                                <input className="bg-white p-2 hover:border-2 " placeholder="Backend Developer" />
+                            </dd>
                         </Divider>
 
                         <Divider gray={true}>
                             <dt className="text-sm font-medium text-gray-500">Work Experience:</dt>
-                            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">margotfoster@example.com</dd>
+                            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                                <input className="bg-white p-2 hover:border-2 " placeholder="margotfoster@example.com" />
+                            </dd>
                         </Divider>
 
                         <Divider>
                             <dt className="text-sm font-medium text-gray-500">Certificate and Awards:</dt>
-                            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">$120,000</dd>
+                            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                                <input className="bg-white p-2 hover:border-2 " placeholder="$120,000" />
+                            </dd>
                         </Divider>
 
                         <Divider gray={true}>
@@ -63,6 +69,15 @@ const PersonalStorySummary = ({ uniData }) => {
                                         <a href="/" className="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
                                     </div>
                                 </li>
+                                <li className="flex items-center justify-between py-3 pl-5 pr-4 text-sm">
+                                    <div className="flex justify-center">
+                                        <div className="mb-3 w-50">
+                                            <label for="formFileSm" className="form-label inline-block mb-2 text-gray-700">Select a file to upload</label>
+                                            <input className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
+                                                                rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="formFileSm" type="file" />
+                                        </div>
+                                    </div>
+                                </li>
                             </dd>
                         </Divider>
                     </dl>
@@ -73,4 +88,4 @@ const PersonalStorySummary = ({ uniData }) => {
     )
 }
 
-export default PersonalStorySummary;
+export default PersonalStoryForm;

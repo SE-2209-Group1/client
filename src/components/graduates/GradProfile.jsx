@@ -2,7 +2,6 @@ import Card from '../Card';
 import Divider from '../Divider';
 
 const GradProfile = ({ profileData }) => {
-
     return (
         <>
             {!(profileData && profileData.length > 0) ? (<div role="status">
@@ -15,39 +14,37 @@ const GradProfile = ({ profileData }) => {
                 <Card key={data.profileid} header={"Your Profile"}>
                     <Divider gray={true}>
                         <dt className="text-sm font-medium text-gray-500">Full name:</dt>
-                        <dd className="sm:col-span-2 sm:mt-0">
-                            <p>{data.name}</p>
-                        </dd>
+                        <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{data.name}</dd>
                     </Divider>
 
                     <Divider>
                         <dt className="text-sm font-medium text-gray-500">Email:</dt>
-                        <dd className="sm:col-span-2 sm:mt-0">{data.personalemail}</dd>
+                        <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{data.personalemail}</dd>
                     </Divider>
 
                     <Divider gray={true}>
                         <dt className="text-sm font-medium text-gray-500">Work Email:</dt>
-                        <dd className="sm:col-span-2 sm:mt-0">{data.workemail}</dd>
+                        <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{data.workemail}</dd>
                     </Divider>
 
                     <Divider>
                         <dt className="text-sm font-medium text-gray-500">Mobile:</dt>
-                        <dd className="sm:col-span-2 sm:mt-0">{data.phoneno}</dd>
+                        <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{data.phoneno}</dd>
                     </Divider>
 
                     <Divider gray={true}>
                         <dt className="text-sm font-medium text-gray-500">Gender:</dt>
-                        <dd className="sm:col-span-2 sm:mt-0">{data.gender}</dd>
+                        <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{data.gender}</dd>
                     </Divider>
 
                     <Divider>
                         <dt className="text-sm font-medium text-gray-500">Nationality:</dt>
-                        <dd className="sm:col-span-2 sm:mt-0">{data.nationality}</dd>
+                        <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{data.nationality}</dd>
                     </Divider>
 
                     <Divider gray={true}>
                         <dt className="text-sm font-medium text-gray-500">Personality:</dt>
-                        <dd className="sm:col-span-2 sm:mt-0">{data.personality}</dd>
+                        <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{data.personality}</dd>
                     </Divider>
 
                     <Divider>

@@ -1,5 +1,5 @@
 const Card = ({ children, header }) => {
-    let classes = "overflow-hidden bg-white shadow-md shadow-gray-300 rounded-md mb-5"
+    let classes = "overflow-hidden bg-white shadow-md shadow-gray-300 rounded-md mb-5 w-full"
 
     return (
         <div className={classes}>
