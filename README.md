@@ -83,7 +83,7 @@ From these we were able to produce our product backlog, which was broken down in
 As a graduate user I want to be able to view my profile so that I can check it for errors and omissions.
 As a graduate user I want to be able to edit my profile so that I can add or update information.
 
-The profile page was separated into 6 components:
+The profile page was separated into 5 components:
 
 - [X] Header
   - [X] Build a header using Tailwind. 
