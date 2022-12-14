@@ -104,7 +104,7 @@ The profile page was separated into 6 components:
     - [X] Portfolio
     - [X] Certificates and Awards
     - [X] Profile
-- [X] Create back-end routes for:
+  - [X] Create back-end routes for:
     - [X] Degree Experience
     - [X] School Qualification
     - [X] Work Experience
