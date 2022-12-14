@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getProfileData, getUniData, getTrainingData, getModuleData } from "./components/AsyncFunctions/asyncDataHandlers.js";
+import { getProfileData, getUniData, getTrainingData, getModuleData, getSchoolData } from "./components/AsyncFunctions/asyncDataHandlers.js";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import ProfilePage from "./components/ProfilePage.jsx";
@@ -11,8 +11,9 @@ export default function App() {
     const [profileid, setProfileid] = useState(1);
     const [uniDeg, setUniDeg] = useState([]);
     const [training, setTraining] = useState([]);
-    const [modules, setModules] = useState([])
-    
+    const [modules, setModules] = useState([]);
+    const [schoolData, setSchool] = useState([]);
+
     const getGradProfile = () => {
         getProfileData(setProfile, setErrorStatus, profileid);
     };
@@ -29,18 +30,23 @@ export default function App() {
         getModuleData(setModules, setErrorStatus, profileid);
     };
 
+    const getSchoolInfo = () => {
+        getSchoolData(setSchool, setErrorStatus, profileid)
+    }
+
     useEffect(() => {
         getGradProfile();
         getPersonalInfo();
         getTrainingInfo();
         getModuleInfo();
+        getSchoolInfo();
     }, []);
 
     return (
         <>
             <Header />
             <Routes>
-                <Route path="/" element={<ProfilePage profiledata={profile} uniData={uniDeg} trainingData={training} modulesData={modules} />} />
+                <Route path="/" element={<ProfilePage profiledata={profile} uniData={uniDeg} schoolData={schoolData} trainingData={training} modulesData={modules} />} />
             </Routes>
             <Footer />
         </>

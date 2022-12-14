@@ -47,4 +47,14 @@ export const getModuleData = async (setModules, setErrorStatus, profileid) => {
   }
 };
 
-
+export const getSchoolData = async (setSchool, setErrorStatus, profileid) => {
+  try {
+    const responseSchoolURL = await axios.get(
+      `http://localhost:4000/getSchool/${profileid}`
+    );
+    console.log(responseSchoolURL.data);
+    setSchool(responseSchoolURL.data);
+  } catch (error) {
+    setErrorStatus(error.message);
+  }
+};
