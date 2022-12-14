@@ -100,24 +100,28 @@ The profile page was separated into 6 components:
   - [X] Create a model schema for:
     - [X] Degree Experience
     - [X] School Qualification
+    - [X] Work Experience
     - [X] Portfolio
     - [X] Certificates and Awards
     - [X] Profile
 - [X] Create back-end routes for:
     - [X] Degree Experience
     - [X] School Qualification
+    - [X] Work Experience
     - [X] Portfolio
     - [X] Certificates and Awards
     - [X] Profile
   - [ ] Test back-end for:
     - [ ] Degree Experience
     - [ ] School Qualification
-    - [ ] Portfolio
+    - [ ] Work Experience
+    - [X] Portfolio
     - [ ] Certificates and Awards
     - [ ] Profile
   - [ ] Feed back-end data into the front-end for:
-    - [ ] Degree Experience
+    - [X] Degree Experience
     - [ ] School Qualification
+    - [ ] Work Experience
     - [X] Portfolio
     - [ ] Certificates and Awards
     - [X] Profile
