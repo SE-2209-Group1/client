@@ -12,7 +12,7 @@ export default function App() {
     const [uniDeg, setUniDeg] = useState([]);
     const [training, setTraining] = useState([]);
     const [modules, setModules] = useState([])
-
+    
     const getGradProfile = () => {
         getProfileData(setProfile, setErrorStatus, profileid);
     };

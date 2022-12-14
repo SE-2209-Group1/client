@@ -58,7 +58,6 @@ chai-http (extend chai assertion library with HTTP integration)
 Back end (data persistence layer)
 MongoDB Atlas
 
-
 ## Getting started
 
 Clone the project and then from the project root directory:
@@ -73,7 +72,7 @@ Using web browser, navigate to the localhost address/port provided in the server
 
 ## Product Backlog
 
-Our epic backlog user stories we focused on:
+
 
 As a graduate user I want to be able to view my profile so that I can check it for errors and omissions
 

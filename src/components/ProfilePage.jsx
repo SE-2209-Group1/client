@@ -37,7 +37,6 @@ const ProfilePage = ({ profiledata, uniData, trainingData, modulesData }) => {
                         }
                     </div>
                 </div>
-
                 <div className='inline-flex w-full'>
                     <div className='flex w-full'>
                         <Training trainingData={trainingData} />
