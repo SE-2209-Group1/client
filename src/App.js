@@ -81,6 +81,7 @@ export default function App() {
               portfolioData={portfolioData}
               trainingData={training}
               modulesData={modules}
+              getAllProfileData={getGradProfile}
             />
           }
         />

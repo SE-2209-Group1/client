@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useNavigate } from "react";
 import GradProfile from './graduates/GradProfile'
 import Training from './graduates/Training.jsx';
 import PersonalStorySummary from './graduates/PersonalStorySummary'
@@ -6,11 +6,16 @@ import Modules from './graduates/Modules';
 import GradProfileForm from "./graduates/GradProfileForm";
 import PersonalStoryForm from "./graduates/PersonalStoryForm";
 import YourInformation from "./graduates/YourInformation";
+import { Link } from "react-router-dom"
 
-const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolData,workData,awardData ,portfolioData}) => {
+
+const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolData, workData, awardData, portfolioData, getAllProfileData }) => {
     const [pageType, setPageType] = useState("normal");
     const isNormalMode = pageType === "normal";
     const isEditMode = pageType === "edit";
+
+    const childRef = useRef();
+
 
     return (
         <div className='bg-DFXBg'>
@@ -21,7 +26,12 @@ const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolDa
                         {isNormalMode ? "Edit" : "Go Back"}
                     </p>
                     {isEditMode && (<>
-                        <button className="absolute right-28 text-white text-sm bg-DFXBlue p-2 rounded-lg">
+
+                        <button className="absolute right-28 text-white text-sm bg-DFXBlue p-2 rounded-lg" onClick={() =>
+                            childRef.current.updateProfile()
+
+
+                        }>
                             Save Changes
                         </button>
                     </>)}
@@ -29,12 +39,12 @@ const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolDa
                 <div className='inline-flex w-full'>
                     <div className='flex w-full'>
                         {isNormalMode ? <GradProfile profileData={profiledata} /> :
-                            <GradProfileForm profileData={profiledata} />}
+                            <GradProfileForm profileData={profiledata} getAllProfileData={getAllProfileData} ref={childRef} />}
                     </div>
 
                     <div className='ml-10 flex w-full'>
-                        {isNormalMode ? <PersonalStorySummary uniData={uniData} schoolData={schoolData} workData={workData} awardData={awardData} portfolioData={portfolioData}/> :
-                            <PersonalStoryForm uniData={uniData} schoolData={schoolData} workData={workData} awardData={awardData} portfolioData={portfolioData}/>
+                        {isNormalMode ? <PersonalStorySummary uniData={uniData} schoolData={schoolData} workData={workData} awardData={awardData} portfolioData={portfolioData} /> :
+                            <PersonalStoryForm uniData={uniData} schoolData={schoolData} workData={workData} awardData={awardData} portfolioData={portfolioData} />
                         }
                     </div>
                 </div>
