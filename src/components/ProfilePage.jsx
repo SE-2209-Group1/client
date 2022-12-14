@@ -1,42 +1,53 @@
-import React from 'react'
+import { useState } from "react";
 import GradProfile from './graduates/GradProfile'
-import Training from '../Graduate/Training'
+import Training from './graduates/Training.jsx';
 import PersonalStorySummary from './graduates/PersonalStorySummary'
-import '../profilePage.css'
+import Modules from './graduates/Modules';
+import GradProfileForm from "./graduates/GradProfileForm";
+import PersonalStoryForm from "./graduates/PersonalStoryForm";
 
+const ProfilePage = ({ profiledata, uniData, trainingData, modulesData }) => {
+    const [pageType, setPageType] = useState("normal");
+    const isNormalMode = pageType === "normal";
+    const isEditMode = pageType === "edit";
 
-
-const ProfilePage = ({ profiledata, uniData, trainingData }) => {
     return (
-        <>
+        <div className='bg-DFXBg'>
+            <div className='p-24'>
+                <div className="flex ml-5 mb-3.5">
+                    <p className="text-DFXBlue cursor-pointer"
+                        onClick={() => { setPageType(isNormalMode ? "edit" : "normal") }}>
+                        {isNormalMode ? "Edit" : "Go Back"}
+                    </p>
+                    {isEditMode && (<>
+                        <button className="absolute right-28 text-white text-sm bg-DFXBlue p-2 rounded-lg">
+                            Save Changes
+                        </button>
+                    </>)}
+                </div>
+                <div className='inline-flex w-full'>
+                    <div className='flex w-full'>
+                        {isNormalMode ? <GradProfile profileData={profiledata} /> :
+                            <GradProfileForm profileData={profiledata} />}
+                    </div>
 
-            <div>
-                <div className='profile'>
-                    <div className='grad'>
-                        <GradProfile profileData={profiledata} ></GradProfile></div>
-
-
-
-                    <div className='personal' ><PersonalStorySummary uniData={uniData} ></PersonalStorySummary>
-
+                    <div className='ml-10 flex w-full'>
+                        {isNormalMode ? <PersonalStorySummary uniData={uniData} /> :
+                            <PersonalStoryForm uniData={uniData} />
+                        }
                     </div>
                 </div>
-            </div >
+                <div className='inline-flex w-full'>
+                    <div className='flex w-full'>
+                        <Training trainingData={trainingData} />
+                    </div>
 
-            <div>
-                <div className='training'>
-                    <div className='grad'>
-                        <Training trainingData={trainingData} ></Training></div>
-
-
-
-                    {/* <div className='personal' ><PersonalStorySummary uniData={uniData} ></PersonalStorySummary> */}
-                    {/* This is where module marks will go */}
-
+                    <div className='ml-10 flex w-full' >
+                        <Modules modulesData={modulesData} />
+                    </div>
                 </div>
             </div>
-
-        </>
+        </div>
     )
 }
 

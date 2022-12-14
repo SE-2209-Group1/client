@@ -8,7 +8,11 @@ module.exports = {
         extend: {
             fontFamily: {
                 'sans': ['sans-serif', 'ClearSans'],
-            }
+            },
+            colors: {
+                DFXBg: '#F5F7FB',
+                DFXBlue: '#001450;',
+            },
         },
     },
     plugins: [],
