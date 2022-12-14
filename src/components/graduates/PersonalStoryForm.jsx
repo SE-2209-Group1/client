@@ -24,7 +24,7 @@ const PersonalStoryForm = ({ uniData, schoolData, workData, awardData, portfolio
                                 <p><strong>University: </strong> <input className="bg-white " placeholder={data.uniname} /></p>
                                 <p><strong>Grade: </strong> <input className="bg-white " placeholder={data.unigrade} /></p>
                                 <p><strong>Level: </strong> <input className="bg-white " placeholder={data.unilevel} /></p>
-                                <p><strong>From: </strong> <DatePicker dateFormat='dd/MM/yyyy' selected={startDate} onChange={(date: Date) => setStartDate(date)} /> <strong> to: </strong><DatePicker dateFormat='dd/MM/yyyy' selected={endDate} onChange={(date: Date) => setEndDate(date)} /></p>
+                                <p><strong>From: </strong></p> <DatePicker dateFormat='dd/MM/yyyy' selected={startDate} onChange={(date: Date) => setStartDate(date)} /> <p> <strong> to: </strong></p><DatePicker dateFormat='dd/MM/yyyy' selected={endDate} onChange={(date: Date) => setEndDate(date)} />
                             </dd>
                         ))}
                     </Divider>
@@ -80,7 +80,7 @@ const PersonalStoryForm = ({ uniData, schoolData, workData, awardData, portfolio
                                 <li className="flex items-center justify-between py-3 pl-5 pr-4 text-sm">
                                     <div className="flex justify-center">
                                         <div className="mb-3 w-50">
-                                            <label for="formFileSm" className="form-label inline-block mb-2 text-gray-700">Select a file to upload</label>
+                                            <label htmlFor="formFileSm" className="form-label inline-block mb-2 text-gray-700">Select a file to upload</label>
                                             <input className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
                                                                 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="formFileSm" type="file" />
                                         </div>

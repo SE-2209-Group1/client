@@ -32,7 +32,6 @@ const GradProfileForm = forwardRef(({ profileData, getAllProfileData }, ref) => 
             setEditProfile({
 
             })
-            navigate('/')
 
         }
     }))

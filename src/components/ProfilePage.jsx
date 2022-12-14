@@ -27,8 +27,10 @@ const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolDa
                     </p>
                     {isEditMode && (<>
 
-                        <button className="absolute right-28 text-white text-sm bg-DFXBlue p-2 rounded-lg" onClick={() =>
-                            childRef.current.updateProfile()
+                        <button className="absolute right-28 text-white text-sm bg-DFXBlue p-2 rounded-lg" onClick={() => {
+                            childRef.current.updateProfile();
+                            setPageType(isNormalMode ? "edit" : "normal");
+                        }
 
 
                         }>
