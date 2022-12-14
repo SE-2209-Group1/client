@@ -6,7 +6,7 @@ import Modules from './graduates/Modules';
 import GradProfileForm from "./graduates/GradProfileForm";
 import PersonalStoryForm from "./graduates/PersonalStoryForm";
 
-const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolData }) => {
+const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolData,workData,awardData ,portfolioData}) => {
     const [pageType, setPageType] = useState("normal");
     const isNormalMode = pageType === "normal";
     const isEditMode = pageType === "edit";
@@ -32,8 +32,8 @@ const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolDa
                     </div>
 
                     <div className='ml-10 flex w-full'>
-                        {isNormalMode ? <PersonalStorySummary uniData={uniData} schoolData={schoolData} /> :
-                            <PersonalStoryForm uniData={uniData} schoolData={schoolData} />
+                        {isNormalMode ? <PersonalStorySummary uniData={uniData} schoolData={schoolData} workData={workData} awardData={awardData} portfolioData={portfolioData}/> :
+                            <PersonalStoryForm uniData={uniData} schoolData={schoolData} workData={workData} awardData={awardData} portfolioData={portfolioData}/>
                         }
                     </div>
                 </div>
