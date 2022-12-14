@@ -5,6 +5,7 @@ import PersonalStorySummary from './graduates/PersonalStorySummary'
 import Modules from './graduates/Modules';
 import GradProfileForm from "./graduates/GradProfileForm";
 import PersonalStoryForm from "./graduates/PersonalStoryForm";
+import YourInformation from "./graduates/YourInformation";
 
 const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolData,workData,awardData ,portfolioData}) => {
     const [pageType, setPageType] = useState("normal");
@@ -45,6 +46,10 @@ const ProfilePage = ({ profiledata, uniData, trainingData, modulesData, schoolDa
                     <div className='ml-10 flex w-full' >
                         <Modules modulesData={modulesData} />
                     </div>
+                </div>
+
+                <div className='inline-flex w-full'>
+                    <YourInformation profileData={profiledata} />
                 </div>
             </div>
         </div>
