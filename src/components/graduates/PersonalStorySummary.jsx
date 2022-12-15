@@ -14,7 +14,7 @@ const PersonalStorySummary = ({ uniData, schoolData, workData, awardData, portfo
                         <dt className="text-sm font-medium text-gray-500">University Degree:</dt>
                         {uniData.map(data => (
                             <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0" key={data._id}>
-                                <p><strong>Subject: </strong>{data.unidesc}</p>
+                                <p><strong>Subject: </strong>{data.unisubject}</p>
                                 <p><strong>University: </strong> {data.uniname}</p>
                                 <p><strong>Level: </strong> {data.unilevel}</p>
                                 <p><strong> Completed: </strong>{moment(data.todate).format('DD/MM/YYYY')}</p>
