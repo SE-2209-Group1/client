@@ -20,7 +20,7 @@ const PersonalStoryForm = ({ uniData, schoolData, workData, awardData, portfolio
                         <dt className="text-sm font-medium text-gray-500">University Degree:</dt>
                         {uniData.map(data => (
                             <dd key={data._id} className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                                <p><strong>Subject: </strong><input className="bg-white " placeholder={data.unisubject} /></p>
+                                <p><strong>Subject: </strong><input className="bg-white " placeholder="Computer Science" /></p>
                                 <p><strong>University: </strong> <input className="bg-white " placeholder={data.uniname} /></p>
                                 <p><strong>Grade: </strong> <input className="bg-white " placeholder={data.unigrade} /></p>
                                 <p><strong>Level: </strong> <input className="bg-white " placeholder={data.unilevel} /></p>
