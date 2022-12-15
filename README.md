@@ -248,4 +248,4 @@ Goals:
   - We would speak with the product owner to discuss what tasks to prioritise. 
 
 What would we improve from sprint 2:
-- Plan out or databases in even more detail. 
+- Plan out our databases in even more detail. 
