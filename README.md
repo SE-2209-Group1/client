@@ -9,10 +9,9 @@
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#product-backlog">Product backlog</a></li>
     <li><a href="#sprint-one-backlog">Sprint One backlog</a></li>
-    <li><a href="#mocks-and-component-heirachy">Mocks and Component heirachy</a></li>
+    <li><a href="#mocks-and-component-hierarchy">Mocks and Component Hierarchy </a></li>
     <li><a href="#front-end-breakdown">Front-end Breakdown</a></li>
     <li><a href="#back-end-breakdown">Back-end Breakdown</a></li>
-    <li><a href="#tests">Tests</a></li>
     <li><a href="#project-review-and-roadmap">Project Review and Roadmap</a></li>
   </ol>
 </details>
@@ -87,11 +86,10 @@ The profile page was separated into 5 components:
 
 - [X] Header
   - [X] Build a header using Tailwind. 
-  - [ ] Ensure that the links supplied in the header, direct the user to a relevant page. 
-  - [ ] Test that the header is correctly rendered.
+  - [X] Test that the header is correctly rendered.
 - [X] Footer
   - [X] Build a footer using Tailwind.
-  - [ ] Test that the header is correctly rendered.
+  - [X] Test that the header is correctly rendered.
 - [X] Profile
   - [X] Create a front-end component hierarchy. 
   - [X] Create a front-end skeleton for the profile section. 
@@ -111,19 +109,19 @@ The profile page was separated into 5 components:
     - [X] Portfolio
     - [X] Certificates and Awards
     - [X] Profile
-  - [ ] Test back-end for:
-    - [ ] Degree Experience
-    - [ ] School Qualification
-    - [ ] Work Experience
-    - [X] Portfolio
-    - [ ] Certificates and Awards
-    - [ ] Profile
-  - [ ] Feed back-end data into the front-end for:
+  - [X] Test back-end for:
     - [X] Degree Experience
-    - [ ] School Qualification
-    - [ ] Work Experience
+    - [X] School Qualification
+    - [X] Work Experience
     - [X] Portfolio
-    - [ ] Certificates and Awards
+    - [X] Certificates and Awards
+    - [X] Profile
+  - [X] Feed back-end data into the front-end for:
+    - [X] Degree Experience
+    - [X] School Qualification
+    - [X] Work Experience
+    - [X] Portfolio
+    - [X] Certificates and Awards
     - [X] Profile
 - [X] Training
   - [X] Create a front-end component hierarchy. 
@@ -142,36 +140,36 @@ The profile page was separated into 5 components:
   - [X] Feed back-end data into the front-end for:
     - [X] Your training
     - [X] Modules
-- [ ] Your Information
-  - [ ] Create a front-end component hierarchy. 
-  - [ ] Create a front-end skeleton for the your information section. 
-    - [ ] Style the front-end components.
-  - [ ] Connect the back-end to the shared database.
-  - [ ] Create a model schema for:
-    - [ ] Badges
-    - [ ] Scores
-    - [ ] Video Link
-  - [ ] Create back-end routes for:
-    - [ ] Badges
-    - [ ] Scores
-    - [ ] Video Link
-  - [ ] Test back-end for:
-    - [ ] Badges
-    - [ ] Scores
-    - [ ] Video Link
-  - [ ] Feed back-end data into the front-end for:
-    - [ ] Badges
-    - [ ] Scores
-    - [ ] Video Link
+- [X] Your Information
+  - [X] Create a front-end component hierarchy. 
+  - [X] Create a front-end skeleton for the your information section. 
+    - [X] Style the front-end components.
+  - [X] Connect the back-end to the shared database.
+  - [X] Create a model schema for:
+    - [X] Badges
+    - [X] Scores
+    - [X] Video Link
+  - [X] Create back-end routes for:
+    - [X] Badges
+    - [X] Scores
+    - [X] Video Link
+  - [X] Test back-end for:
+    - [X] Badges
+    - [X] Scores
+    - [X] Video Link
+  - [X] Feed back-end data into the front-end for:
+    - [X] Badges
+    - [X] Scores
+    - [X] Video Link
 
 
 ## Sprint One Backlog
 
 Have the graduate view page fully built, tested, styled, shippable and checked with product owner
 
-## Mocks and Component heirachy
+## Mocks and Component Hierarchy 
 
-We have used the two wireframes given to us by the product owner and from these we have broken them down into the component heirarchy below.
+We have used the two wireframes given to us by the product owner and from these we have broken them down into the component hierarchy below.
 
 ## Graduate Page
 
@@ -213,3 +211,41 @@ We have used the two wireframes given to us by the product owner and from these 
 ## Back-End Breakdown
 
 ![Back-end Breakdown](/Images/Server.png)
+
+## Project Retro 
+- Sprint 0 (planning)
+  - We learnt a lot from breaking down the problems into smaller tasks.
+  - We discussed time-management honestly and divided our team-engineering time accordingly.  
+  - We decided to work using the Agile Methodology:
+    - We all agreed that daily stand-ups were a priority, and that all members must be in attendance.
+  - We decided to use Miro and Trello for project planning and management. 
+    
+- Sprint 1
+  - What went well:
+    - Our methods of communication worked really well. 
+    - Daily end-of-day reflection meetings were very useful for our team for ensuring that we were on track to achieve our goals. 
+    - Daily morning stand-ups were well used. 
+    - Regular communication with the product owner. 
+  - What to work on for the next sprint:
+    - We overestimated how many tasks we could complete in this time (our work velocity).
+    - We agreed to consistent code and styling standards for the next sprint for consistency. 
+    - We decided to extract lengthy code into smaller components, that were simpler and more reusable.
+    - Introduce a developer branch to separate what we were working on, and shippable products. 
+
+- Sprint 2
+  - What went well:
+    - Working in flexible pair-programming allowed us to share skills and swarm bugs – learnt a lot from other working styles. 
+    - We were more realistic with our sprint goal - achieved our 'definition of done'.
+    - We worked well as an Agile team, every member was proactive, engaged, reliable, and we communicated effectively through the use of daily stand-ups, group chats, and group reflections. 
+
+
+### Sprint 3 and beyond...
+Goals:
+- Login/Logout functionality
+- Back-end deployment
+- Editable summary page
+- Begin to tackle other user stories
+  - We would speak with the product owner to discuss what tasks to prioritise. 
+
+What would we improve from sprint 2:
+- Plan out or databases in even more detail. 
