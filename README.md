@@ -34,6 +34,8 @@ axios (for handling HTTP requests and responses)
 Tailwind (css styling import only)
 React Router (handling paths within the React App)
 
+<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" width="50" height="50">
+
 Testing - Jest with:
 
 testing-library/react
@@ -50,12 +52,19 @@ body-parser (parsing middleware for handling json req.body)
 dotenv (environment variable loading)
 cors (cross origin resource sharing package)
 
+<img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original-wordmark.svg" width="50" height="50">
+<img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original-wordmark.svg" alt="express" width="50" height="50">
+<img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" width="50" height="50">
+
 Testing - Mocha with:
 
 chai (assertion library)
 chai-http (extend chai assertion library with HTTP integration)
 Back end (data persistence layer)
 MongoDB Atlas
+
+![postman](/Images/postman.jpg)
+<img src="https://github.com/devicons/devicon/blob/master/icons/mocha/mocha-plain.svg" width="50" height="50">
 
 ## Getting started
 
@@ -72,16 +81,18 @@ Using web browser, navigate to the localhost address/port provided in the server
 ## Product Backlog
 
 We decided to focus our time on the most important element of the DFXtra Application - the Graduate view page. With this in mind, the epic breakdown that we focussed on was:
+```
 As a graduate user I want to manage my DFXtra profile so that I can keep it current
-
+```
 This was broken down into the following Graduate User Epic Breakdown:
+```
 As a graduate user I want to be able to view my profile so that I can check it for errors and omissions.
-
+```
 From these we were able to produce our product backlog, which was broken down into smaller tasks for us to tackle:
-
+```
 As a graduate user I want to be able to view my profile so that I can check it for errors and omissions.
 As a graduate user I want to be able to edit my profile so that I can add or update information.
-
+```
 The profile page was separated into 5 components:
 
 - [X] Header
@@ -212,6 +223,16 @@ We have used the two wireframes given to us by the product owner and from these 
 
 ![Back-end Breakdown](/Images/Server.png)
 
+## Sprint Goals
+
+Goal 1:
+
+"Have the graduate view page fully built, tested, styled, shippable and checked with product owner"
+
+Goal 2: 
+
+"Have the graduate view and edit page fully built, tested, styled, shippable and checked with product owner"
+
 ## Project Retro 
 - Sprint 0 (planning)
   - We learnt a lot from breaking down the problems into smaller tasks.
@@ -220,6 +241,8 @@ We have used the two wireframes given to us by the product owner and from these 
     - We all agreed that daily stand-ups were a priority, and that all members must be in attendance.
   - We decided to use Miro and Trello for project planning and management. 
     
+![Trello](/Images/Trelloproject2.png)
+
 - Sprint 1
   - What went well:
     - Our methods of communication worked really well. 
