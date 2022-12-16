@@ -257,7 +257,8 @@ Goal 2:
     - Working in flexible pair-programming allowed us to share skills and swarm bugs – learnt a lot from other working styles. 
     - We were more realistic with our sprint goal - achieved our 'definition of done'.
     - We worked well as an Agile team, every member was proactive, engaged, reliable, and we communicated effectively through the use of daily stand-ups, group chats, and group reflections. 
-
+  
+![Sprint 2](/Images/sprin2.png)
 
 ### Sprint 3 and beyond...
 Goals:
@@ -269,3 +270,5 @@ Goals:
 
 What would we improve from sprint 2:
 - Plan out our databases in even more detail. 
+
+![Sprint 1](/Images/sprin1.png)
