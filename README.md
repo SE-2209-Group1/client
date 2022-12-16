@@ -79,7 +79,8 @@ Using web browser, navigate to the localhost address/port provided in the server
 
 We decided to focus our time on the most important element of the DFXtra Application - the Graduate view page. With this in mind, the epic breakdown that we focussed on was:
 ```
-As a graduate user I want to manage my DFXtra profile so that I can keep it current
+As a graduate user I want to manage my DFXtra 
+profile so that I can keep it current.
 ```
 This was broken down into the following Graduate User Epic Breakdown:
 ```
