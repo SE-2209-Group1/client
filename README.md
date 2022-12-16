@@ -34,7 +34,7 @@ axios (for handling HTTP requests and responses)
 Tailwind (css styling import only)
 React Router (handling paths within the React App)
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" width="50" height="50">
+<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" width="100" >
 
 Testing - Jest with:
 
@@ -52,9 +52,7 @@ body-parser (parsing middleware for handling json req.body)
 dotenv (environment variable loading)
 cors (cross origin resource sharing package)
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original-wordmark.svg" width="50" height="50">
-<img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original-wordmark.svg" alt="express" width="50" height="50">
-<img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" width="50" height="50">
+<img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original-wordmark.svg" width="100" >&nbsp;&nbsp;&nbsp;<img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original-wordmark.svg" alt="express" width="100" >&nbsp;&nbsp;&nbsp;                    <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" width="100" >
 
 Testing - Mocha with:
 
@@ -63,8 +61,7 @@ chai-http (extend chai assertion library with HTTP integration)
 Back end (data persistence layer)
 MongoDB Atlas
 
-![postman](/Images/postman.jpg)
-<img src="https://github.com/devicons/devicon/blob/master/icons/mocha/mocha-plain.svg" width="50" height="50">
+<img src="https://github.com/devicons/devicon/blob/master/icons/mocha/mocha-plain.svg" width="100" >
 
 ## Getting started
 
